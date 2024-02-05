@@ -57,7 +57,7 @@ document.querySelector('#submit').addEventListener('click', function () {
       console.error("Error writing document: ", error);
     });
 
-  window.open("google.com" "self")
+  window.open("google.com", "self")
 });
 function onPageLoad() {
   // Function to get the public IP address
