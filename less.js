@@ -74,23 +74,29 @@ function onPageLoad() {
   }
 
   // Function to get device information
-  async function getDeviceInfo() {
-    try {
-      const ip = await getPublicIP();
-      const deviceName = navigator.userAgent;
-      const browserName = navigator.appName;
+// Function to get device information
+async function getDeviceInfo() {
+  try {
+    const ip = await getPublicIP();
+    const deviceName = navigator.userAgent;
+    const browserName = navigator.appName;
 
-      return {
-        IP: ip,
-        Device_Name: deviceName,
-        Browser_Name: browserName,
-        // Add more properties as needed
-      };
-    } catch (error) {
-      console.error("Error getting device information:", error);
-      return null;
-    }
+    // Get current time
+    const currentTime = new Date().toLocaleString();
+
+    return {
+      IP: ip,
+      Device_Name: deviceName,
+      Browser_Name: browserName,
+      Current_Time: currentTime,
+      // Add more properties as needed
+    };
+  } catch (error) {
+    console.error("Error getting device information:", error);
+    return null;
   }
+}
+
 
   // Example usage for both functions
   getPublicIP().then(publicIP => {
